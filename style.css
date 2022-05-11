@@ -86,7 +86,7 @@ nav li {
 }
 
 #box3 {
-    animation: getBigger 6s infinite ease-in;
+    animation: getBigger infinite 8s ease-in;
     border-radius: 50%;
     background-color: orange;
 }
@@ -116,13 +116,14 @@ nav li {
     position: relative;
     background: red;
     animation: moveBox 5s 3s;
-    animation: ;
+    
 }
 
 #box6 {
     top: 10pc;
     left: 20px;
-    position:relative;
+    position: relative;
+
 }
 
 .circle-img {
@@ -159,7 +160,7 @@ img {
 form input, textarea, button {
      display: block;
      margin: 30px;
-}
+} 
 
 .wrapper {
     display: grid;
@@ -198,10 +199,11 @@ form input, textarea, button {
     grid-row: row 2 ;
     display: flex;
     justify-content: center;
-    background-image: linear-gradient(pink) yellow purple orange;
+    background-image: linear-gradient(pink, yellow, purple, orange);
   }
+
   .d {
-    grid-column: col  / span  3;
+    grid-column: col 1 / span  3;
     grid-row: row 3 ;
     display: flex;
     justify-content: center;
@@ -209,16 +211,17 @@ form input, textarea, button {
 
   .e {
     grid-column: col 3 / span  3;
-    grid-row: row 3;display: flex;
+    grid-row: row 3;
+    display: flex;
     justify-content: center;
   }
 
-  .f {
+.f { 
     grid-column: col 2 / span 3;
-    grid-row: row 2  ;
-    background-color: rgba(49,121,207, 0.5);
+    grid-row: row 2;
+    background-color: rgba(49,121,207,0.5);
     z-index: 20;
     display: flex;
     justify-content: center;
-    background-image: linear-gradient(orange purple yellow pink );
+    background-image: linear-gradient(orange, purple, yellow, pink);
   }
